@@ -6,10 +6,22 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   </head>
   <body>
-    @* <form action="/items" method="post">
-      <label for="description">Add a new item</label>
-      <input id="description" name="description" type="text">
-      <button type="submit">Submit</button>
-    </form> *@
+    <div class="container">
+      <h3>New Order</h3>
+      <form action="/vendor/@Model.Id/order" method="post">
+        <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
+        
+        <label for="orderDescription">Enter Order Description</label>
+        <input id="orderDescription" name="orderDescription" type="text">
+
+        <label for="orderPrice">Enter Order Price</label>
+        <input id="orderPrice" name="orderPrice" type="number">
+
+        <label for="orderDate">Enter Order Date</label>
+        <input id="orderDate" name="orderDate" type="text">
+
+        <button type="submit">Submit</button>
+      </form> 
+    </div>
   </body>
 </html>

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System;
 using Microsoft.AspNetCore.Mvc;
-using ToDoList.Models;
+using VendorOrder.Models;
 
 namespace VendorOrder.Controllers
 {
@@ -26,12 +26,12 @@ namespace VendorOrder.Controllers
         return View(model);
       }
 
-      [HttpPost("/order/delete")]
-      public ActionResult DeleteAll()
-      {
-        Item.ClearAll();
-        return View();
-      }
+      // [HttpPost("/order/delete")]
+      // public ActionResult DeleteAll()
+      // {
+      //   Order.ClearAll();
+      //   return View();
+      // }
 
   }
 }

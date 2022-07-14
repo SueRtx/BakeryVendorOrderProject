@@ -6,11 +6,21 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   </head>
   <body>
-    @* <h1>To Do List Item Details: </h1>
+    <div class="container">
+      <h1>Vendor: </h1>
+      <h2>@Model["vendor"].Name</h2>
 
-    <h2>@Model.Description</h2>
+      <h1>Order Details: </h1>
+      <h2>@Model["order"].Description</h2>
 
-    <a href='/items/new'>Add another item</a>
-    <a href='/items'>View all items</a> *@
+      <h1>Order Price: </h1>
+      <h2>@Model["order"].Price</h2>
+
+      <h1>Order Date: </h1>
+      <h2>@Model["order"].Date</h2>
+
+      <a href='/vendor/@Model["vendor"].Id/order/new'>Add another order</a>
+      <a href='/vendor'>View all vendor</a> 
+    </div>
   </body>
 </html>
