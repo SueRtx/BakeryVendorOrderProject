@@ -4,37 +4,33 @@ namespace VendorOrder.Models
 {
   public class Order
   {
-    // private static List<Category> _instances = new List<Category> {};
-    // public string Name { get; set; }
-    // public int Id { get; }
-    // public List<Item> Items { get; set; }
+    public string Description { get; set; }
+    public string Price { get; set; }
+    public string Date { get; set; }
+    public int Id { get; }
+    private static List<Order> _instances = new List<Order> { };
 
-    // public Category(string categoryName)
-    // {
-    //   Name = categoryName;
-    //   _instances.Add(this);
-    //   Id = _instances.Count;
-    //   Items = new List<Item>{};
-    // }
+    public Order(string description, int price, string date)
+    {
+      Description = description;
+      Price = price;
+      Date = date;
+      _instances.Add(this);
+      Id = _instances.Count;
+    }
 
-    // public static void ClearAll()
-    // {
-    //   _instances.Clear();
-    // }
+    public static List<Order> GetAll()
+    {
+      return _instances;
+    }
 
-    // public static List<Category> GetAll()
-    // {
-    //   return _instances;
-    // }
-
-    // public static Category Find(int searchId)
-    // {
-    //   return _instances[searchId-1];
-    // }
-
-    // public void AddItem(Item item)
-    // {
-    //   Items.Add(item);
-    // }
+    public static void ClearAll()
+    {
+      _instances.Clear();
+    }
+    public static Order Find(int searchId)
+    {
+      return _instances[searchId-1];
+    }
   }
 }

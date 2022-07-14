@@ -32,9 +32,9 @@ namespace VendorOrder.Controllers
     {
       Dictionary<string, object> model = new Dictionary<string, object>();
       Vendor selectedVendor = Vendor.Find(id);
-      List<Order> vendorOrder = selectedVendor.Order;
+      List<Order> vendorOrders = selectedVendor.Orders;
       model.Add("vendor", selectedVendor);
-      model.Add("order", vendorOrder);
+      model.Add("orders", vendorOrders);
       return View(model);
     }
 
@@ -46,8 +46,8 @@ namespace VendorOrder.Controllers
       Vendor foundVendor = Vendor.Find(vendorId);
       Order newOrder = new Order(orderDescription);
       foundVendor.AddOrder(newOrder);
-      List<Order> vendorOrder = foundVendor.Order;
-      model.Add("order", vendorOrder);
+      List<Order> vendorOrders = foundVendor.Orders;
+      model.Add("orders", vendorOrders);
       model.Add("vendor", foundVendor);
       return View("Show", model);
     }
