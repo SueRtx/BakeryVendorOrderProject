@@ -35,19 +35,16 @@ namespace VendorOrder.Tests
       Assert.AreEqual(name, result);
     }
 
-    // [TestMethod]
-    // public void GetId_ReturnsVendorId_Int()
-    // {
-    //   //Arrange
-    //   string name = "Test Vendor";
-    //   Vendor newVendor = new Vendor(name);
+    [TestMethod]
+    public void GetId_ReturnsVendorId_Int()
+    {
+      string name = "Test Vendor";
+      Vendor newVendor = new Vendor(name);
 
-    //   //Act
-    //   int result = newVendor.Id;
+      int result = newVendor.Id;
 
-    //   //Assert
-    //   Assert.AreEqual(1, result);
-    // }
+      Assert.AreEqual(1, result);
+    }
 
     // [TestMethod]
     // public void GetAll_ReturnsAllVendorObjects_VendorList()
