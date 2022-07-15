@@ -69,23 +69,19 @@ namespace VendorOrder.Tests
       Assert.AreEqual(newVendor2, result);
     }
 
-    // [TestMethod]
-    // public void AddItem_AssociatesItemWithVendor_ItemList()
-    // {
-    //   //Arrange
-    //   string description = "Walk the dog.";
-    //   Item newItem = new Item(description);
-    //   List<Item> newList = new List<Item> { newItem };
-    //   string name = "Work";
-    //   Vendor newVendor = new Vendor(name);
-    //   newVendor.AddItem(newItem);
-
-    //   //Act
-    //   List<Item> result = newVendor.Items;
-
-    //   //Assert
-    //   CollectionAssert.AreEqual(newList, result);
-    // }
-
+    [TestMethod]
+    public void AddOrder_AssociatesOrderWithVendor_OrderList()
+    {
+      string description = "flour";
+      string price = "10";
+      string date = "7/14/2022"; 
+      Order newOrder = new Order(description, price, date);
+      List<Order> newList = new List<Order> { newOrder };
+      string name = "Store1";
+      Vendor newVendor = new Vendor(name);
+      newVendor.AddOrder(newOrder);
+      List<Order> result = newVendor.Orders;
+      CollectionAssert.AreEqual(newList, result);
+    }
   }
 }
