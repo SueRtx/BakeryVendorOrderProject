@@ -14,12 +14,12 @@ namespace VendorOrder.Tests
       Order.ClearAll();
     }
 
-    // [TestMethod]
-    // public void OrderConstructor_CreatesInstanceOfOrder_Order()
-    // {
-    //   Order newOrder = new Order("test");
-    //   Assert.AreEqual(typeof(Order), newOrder.GetType());
-    // }
+    [TestMethod]
+    public void OrderConstructor_CreatesInstanceOfOrder_Order()
+    {
+      Order newOrder = new Order("Spoon", "10", "7/14/2022");
+      Assert.AreEqual(typeof(Order), newOrder.GetType());
+    }
 
     // [TestMethod]
     // public void GetDescription_ReturnsDescription_String()
