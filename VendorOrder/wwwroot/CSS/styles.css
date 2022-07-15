@@ -2,7 +2,7 @@ body {
   background-color: rgb(136, 237, 240);
 }
 
-.page {
+.page, #page {
   margin-top: 3%;
 }
 
@@ -40,7 +40,7 @@ form {
   color: rgb(8, 76, 93); 
 }
 
-.addVendor, .orderList {
+.addVendor, .orderList, .newOrder {
   margin-top: 3%;
   margin-left: 5%;
   padding: 3%;
@@ -74,12 +74,33 @@ form {
 }
 
 #addOrderLink {
-  
- 
   border: 5px solid #1292ab;
   padding-top: 3px;
- 
   text-align: center;
- 
   background-color: rgb(162, 232, 234);  
 }
+
+#orderPrice, #orderDescription, #orderDate {
+  background-color: rgb(162, 232, 234);
+  float: right;
+  margin-right: 20%;
+  border: 3px solid #1292ab;
+  padding: 2px;
+  font-weight: bold;
+  font-size: 25px;
+  width:30%;
+  color: rgb(8, 76, 93); 
+}
+
+#btn2 {
+  float: right;
+  margin-right: 2%;
+  margin-top: -7%;
+  background-color: rgb(202, 238, 116);  
+  border: 3px solid #1292ab;
+  padding: 2px;
+  font-weight: bold;
+  font-size: 25px;
+  color: rgb(8, 76, 93); 
+}
+

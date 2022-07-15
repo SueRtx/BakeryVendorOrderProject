@@ -3,20 +3,31 @@
 }
   <body>
     <div class="container">
-      <h3>New Order</h3>
+     
+        <h1 id="page"><strong>S U N N Y * B A K E R Y</strong></h1>
+      <h2><strong>New Order</strong></h2>
+
+      <div class="newOrder">
       <form action="/vendor/@Model.Id/order" method="post">
-        <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id" required>
+        <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
         
-        <label for="orderDescription">Enter Order Description</label>
-        <input id="orderDescription" name="orderDescription" type="text" required>
+        <label for="orderDescription">Enter Order Description:</label>
 
-        <label for="orderPrice">Enter Order Price</label>
-        <input id="orderPrice" name="orderPrice" type="number">
+        <select class="form-control" id="orderDescription" name="orderDescription">
+            <option value="Bread"checked>Bread</option>
+            <option value="Pastry">Pastry</option> 
+          </select>  
 
-        <label for="orderDate">Enter Order Date</label>
-        <input id="orderDate" name="orderDate" type="date" required>
+        @* <input id="orderDescription" name="orderDescription" type="text" required><br> *@
 
-        <button type="submit">Submit</button>
+        <label for="orderPrice">Enter Order Price: </label>
+        <input id="orderPrice" name="orderPrice" type="number"required><br>
+
+        <label for="orderDate">Enter Order Date: </label>
+        <input id="orderDate" name="orderDate" type="date" required><br>
+
+        <button type="submit" id='btn2'>Submit</button>
       </form> 
+      </div>
     </div>
   </body>
