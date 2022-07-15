@@ -9,9 +9,34 @@ div#footer {
 }
 
 body {
-  background-color: rgb(3, 209, 216);
+  background-color: rgb(136, 237, 240);
   text-align: center;
 }
 .homePage {
-  font-weight: bold;
+  margin-top: 3%;
+}
+
+img {
+  width: 450px;
+}
+
+h1, h2 {
+  color: rgb(8, 76, 93);
+}
+
+.viewVendorLink {
+  float: left;
+  border: 5px solid #1292ab;
+  padding: 5px;
+  margin-top: 2%;
+  
+  width:40%;
+}
+
+.addVendorLink {
+  float: right;
+  border: 5px solid #1292ab;
+  padding: 5px;
+  margin-top: 2%;
+  width:40%;
 }
