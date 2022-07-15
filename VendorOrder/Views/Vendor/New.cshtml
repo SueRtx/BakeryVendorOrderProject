@@ -3,16 +3,22 @@
 }
   <body>
     <div class="container">
-      <h1>Add a Vendor</h1>
-      <p>Add a Vendor here:</p>
+      <div class="page">
+        <h1><strong>S U N N Y * B A K E R Y</strong></h1>
+        <h2><strong>Vendor</strong></h2>
 
-      <form action="/vendor" method="post">
-        <label for="vendorName">Vendor name</label>
-        <input id="vendorName" name="vendorName" type="text">
-        <button type="submit">Add</button>
-      </form>
+        <div class="addVendor">
+          <form action="/vendor" method="post">
+            <label for="vendorName">Enter Vendor name: </label>
+            <input id="vendorName" name="vendorName" type="text">
+            <button type="submit" id="btn">Add </button>
+          </form>
+        </div>
 
-      <p><a href="/">Back home</a></p>
-      <p><a href="/categories">Back to Vendors.</a></p>
+        <h4 id="addVendorLink"><a href='/vendor/new'>Add Vendor</a></h4>
+        <h4 id="homePageLink"><a href='/'>Back Home</a></h4>
+        
+
+      </div>
     </div>
   </body>
