@@ -7,12 +7,13 @@ body {
 }
 
 img {
+  margin-left: 29%;
   margin-top: 1%;
   margin-bottom: 1%;
   width: 45%;
 }
 
-h1, h2 {
+h1, h2, h5 {
   text-align: center;
   color: rgb(8, 76, 93);
 }
@@ -23,6 +24,7 @@ h3 {
 
 h4 {
   color: rgb(180, 36, 14);
+  text-align: center;
 }
 
 form {
@@ -31,13 +33,31 @@ form {
   font-weight: bold;
 }
 
+#vendorNameList {
+  color: rgb(8, 76, 93);
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 45%;
+}
+
 #btn, #vendorName {
+  
+  border: 3px solid #1292ab;
+  padding: 2px;
+  font-weight: bold;
+  font-size: 25px;
+  color: rgb(8, 76, 93);
+  background-color: rgb(216, 236, 150);  
+}
+
+#vendorName {
   background-color: rgb(162, 232, 234);  
   border: 3px solid #1292ab;
   padding: 2px;
   font-weight: bold;
   font-size: 25px;
-  color: rgb(8, 76, 93); 
+  color: rgb(8, 76, 93);
+  
 }
 
 .addVendor, .orderList, .newOrder {
@@ -77,7 +97,7 @@ form {
   border: 5px solid #1292ab;
   padding-top: 3px;
   text-align: center;
-  background-color: rgb(162, 232, 234);  
+  background-color: rgb(216, 236, 150);  
 }
 
 #orderPrice, #orderDescription, #orderDate {
