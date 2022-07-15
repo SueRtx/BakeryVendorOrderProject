@@ -10,33 +10,38 @@ div#footer {
 
 body {
   background-color: rgb(136, 237, 240);
-  text-align: center;
+
 }
 .homePage {
   margin-top: 3%;
 }
 
 img {
-  width: 450px;
+ 
+  width: 461px;
 }
 
 h1, h2 {
+  text-align: center;
   color: rgb(8, 76, 93);
 }
 
-.viewVendorLink {
+#viewVendorLink {
   float: left;
+  margin-left: 5%;
   border: 5px solid #1292ab;
   padding: 5px;
   margin-top: 2%;
-  
+  text-align: center;
   width:40%;
 }
 
-.addVendorLink {
+#addVendorLink {
   float: right;
+  margin-right: 5%;
   border: 5px solid #1292ab;
   padding: 5px;
   margin-top: 2%;
   width:40%;
+  text-align: center;
 }

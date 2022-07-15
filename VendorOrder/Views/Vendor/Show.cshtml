@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>My To-Do List!</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  </head>
+@{
+  Layout = "_Layout";
+}
   <body>
     <div class="container"></div>
       @using VendorOrder.Models;
@@ -14,8 +10,12 @@
       <ol>
       @foreach (Order order in @Model["order"])
       {
-        <li>Description: <a href='/vendor/@Model["vendor"].Id/orders/@order.Id'>@order.Description
-        <a href='/vendor/@Model["vendor"].Id/orders/@order.Id'></a>Price: $ @order.Price</a>
+       <h3>Vendor: @Model["vendor"].Name</h3> 
+
+        <li>
+        
+        <a href='/vendor/@Model["vendor"].Id/orders/@order.Id'>Description: @order.Description</a>
+        <a href='/vendor/@Model["vendor"].Id/orders/@order.Id'>Price: $ @order.Price</a>
         <a href='/vendor/@Model["vendor"].Id/orders/@order.Id'>Date: @order.Date</a></li>
       }
       </ol>
@@ -25,4 +25,3 @@
       <p><a href='/'>Return to Home Page</a></p> 
     
   </body>
-</html>
