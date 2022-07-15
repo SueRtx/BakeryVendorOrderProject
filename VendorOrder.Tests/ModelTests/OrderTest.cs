@@ -21,19 +21,16 @@ namespace VendorOrder.Tests
       Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
 
-    // [TestMethod]
-    // public void GetDescription_ReturnsDescription_String()
-    // {
-    //   //Arrange
-    //   string description = "Walk the dog.";
-
-    //   //Act
-    //   Order newOrder = new Order(description);
-    //   string result = newOrder.Description;
-
-    //   //Assert
-    //   Assert.AreEqual(description, result);
-    // }
+    [TestMethod]
+    public void GetDescription_ReturnsDescription_String()
+    {
+      string description = "Spoon";
+      string price = "10";
+      string date = "7/14/2022";
+      Order newOrder = new Order(description, price, date);
+      string result = newOrder.Description;
+      Assert.AreEqual(description, result);
+    }
 
     // [TestMethod]
     // public void SetDescription_SetDescription_String()
