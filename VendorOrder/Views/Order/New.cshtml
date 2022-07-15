@@ -9,16 +9,16 @@
     <div class="container">
       <h3>New Order</h3>
       <form action="/vendor/@Model.Id/order" method="post">
-        <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
+        <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id" required>
         
         <label for="orderDescription">Enter Order Description</label>
-        <input id="orderDescription" name="orderDescription" type="text">
+        <input id="orderDescription" name="orderDescription" type="text" required>
 
         <label for="orderPrice">Enter Order Price</label>
         <input id="orderPrice" name="orderPrice" type="number">
 
         <label for="orderDate">Enter Order Date</label>
-        <input id="orderDate" name="orderDate" type="text">
+        <input id="orderDate" name="orderDate" type="date" required>
 
         <button type="submit">Submit</button>
       </form> 

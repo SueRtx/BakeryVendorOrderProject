@@ -7,3 +7,11 @@ div#footer {
   background:#333;
   padding:8px;
 }
+
+body {
+  background-color: rgb(3, 209, 216);
+  text-align: center;
+}
+.homePage {
+  font-weight: bold;
+}

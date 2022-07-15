@@ -7,20 +7,18 @@
   </head>
   <body>
     <div class="container">
-      <h1>Vendor: </h1>
-      <h2>@Model["vendor"].Name</h2>
+      <h1>VendorOrder Details </h1>
 
-      <h1>Order Details: </h1>
-      <h2>@Model["order"].Description</h2>
+      <h3>Vendors: @Model["vendor"].Name</h3>
 
-      <h1>Order Price: </h1>
-      <h2>@Model["order"].Price</h2>
+      <h3>Order Details: @Model["order"].Description</h3>
 
-      <h1>Order Date: </h1>
-      <h2>@Model["order"].Date</h2>
+      <h3>Order Price: @Model["order"].Price</h3>
 
-      <a href='/vendor/@Model["vendor"].Id/order/new'>Add another order</a>
-      <a href='/vendor'>View all vendor</a> 
+      <h3>Order Date: @Model["order"].Date</h3>
+
+      <a href='/vendor/@Model["vendor"].Id/order/new'>Add Orders</a>
+      <a href='/vendor'>View Vendors</a> 
     </div>
   </body>
 </html>

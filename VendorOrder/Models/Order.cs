@@ -9,6 +9,7 @@ namespace VendorOrder.Models
     public string Date { get; set; }
     public int Id { get; set;}
     private static List<Order> _instances = new List<Order> { };
+    
     public Order(string description, string price, string date)
     {
       Description = description;
