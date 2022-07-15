@@ -40,14 +40,15 @@ form {
   color: rgb(8, 76, 93); 
 }
 
-.addVendor {
-  margin-top: 5%;
+.addVendor, .orderList {
+  margin-top: 3%;
   margin-left: 5%;
   padding: 3%;
   color: rgb(8, 76, 93);
   border: 5px solid #1292ab; 
   width:90%;
-  background-color: rgb(162, 232, 234);  
+  background-color: rgb(162, 232, 234); 
+  font-size: 25px;
 }
 
 #viewVendorLink, #homePageLink {
@@ -69,5 +70,16 @@ form {
   margin-top: 2%;
   width:40%;
   text-align: center;
+  background-color: rgb(162, 232, 234);  
+}
+
+#addOrderLink {
+  
+ 
+  border: 5px solid #1292ab;
+  padding-top: 3px;
+ 
+  text-align: center;
+ 
   background-color: rgb(162, 232, 234);  
 }
