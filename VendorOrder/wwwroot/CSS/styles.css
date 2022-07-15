@@ -12,7 +12,7 @@ body {
   background-color: rgb(136, 237, 240);
 
 }
-.homePage {
+.homePage, .vendorPage {
   margin-top: 3%;
 }
 
@@ -25,7 +25,15 @@ h1, h2 {
   color: rgb(8, 76, 93);
 }
 
-#viewVendorLink {
+h3 {
+  color: rgb(8, 76, 93);
+}
+
+h4 {
+  color: rgb(180, 36, 14);
+}
+
+#viewVendorLink, #homePageLink {
   float: left;
   margin-left: 5%;
   border: 5px solid #1292ab;
