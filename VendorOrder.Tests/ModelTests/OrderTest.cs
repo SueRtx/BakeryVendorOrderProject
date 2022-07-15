@@ -33,7 +33,7 @@ namespace VendorOrder.Tests
     }
 
     [TestMethod]
-    public void getPrice_ReturnPrice_String()
+    public void GetPrice_ReturnPrice_String()
     {
       string description = "Spoon";
       string price = "10";
@@ -41,6 +41,17 @@ namespace VendorOrder.Tests
       Order newOrder = new Order(description, price, date);
       string result = newOrder.Price;
       Assert.AreEqual(price, result);
+    }
+
+    [TestMethod]
+    public void GetDate_ReturnDate_String()
+    {
+      string description = "Spoon";
+      string price = "10";
+      string date = "7/14/2022";
+      Order newOrder = new Order(description, price, date);
+      string result = newOrder.Date;
+      Assert.AreEqual(date, result);
     }
 
     // [TestMethod]
