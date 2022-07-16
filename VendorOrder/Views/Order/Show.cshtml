@@ -4,20 +4,26 @@
 
 <div class="container">
   <h1 class="title"><strong>S U N N Y * B A K E R Y</strong></h1>
-  <h2><strong>New Order</strong></h2>
+
+  <h2><strong>Order Details</strong></h2>
+
+  <div class="newOrder">
+    <h3><strong>Vendor: </strong>@Model["vendor"].Name</h3>
+
+    <h3><strong>Date: </strong>@Model["order"].Date</h3>
+
+    <h3><strong>Order: </strong>@Model["order"].Description</h3>
+
+    <h3><strong>Price: </strong>$ @Model["order"].Price</h3>
+
+    
+  </div>
 
   
-  <h1>Vendor Order Details </h1>
 
-  <h3>Vendors: @Model["vendor"].Name</h3>
+  <h4 id="homePageLink"><a href='/vendor/@Model["vendor"].Id/order/new'>Add New Order</a></p></h4> 
 
-  <h3>Order Details: @Model["order"].Description</h3>
-
-  <h3>Order Price: @Model["order"].Price</h3>
-
-  <h3>Order Date: @Model["order"].Date</h3>
-
-  <a href='/vendor/@Model["vendor"].Id/order/new'>Add Orders</a>
-  <a href='/vendor'>View Vendors</a> 
+  <h4 id="addVendorLink"><a href='/vendor'>View Vendors</a></h4> 
+  
 </div>
 
