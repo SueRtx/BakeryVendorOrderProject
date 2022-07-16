@@ -71,7 +71,7 @@ form {
   font-size: 25px;
 }
 
-.rightSideBtn {
+#rightSideBtn {
   float: right;
   margin-right: 5%;
   border: 5px solid #1292ab;

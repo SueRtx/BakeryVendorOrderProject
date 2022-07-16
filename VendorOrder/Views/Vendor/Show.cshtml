@@ -8,7 +8,6 @@
   
   <h2><strong>Orders</strong></h2>
   <h5><strong>Vendor: @Model["vendor"].Name </strong> * Click on order to see details *</h5>
-
   <div class="infoBox">
     @if (@Model["order"].Count == 0)
     {
@@ -20,10 +19,10 @@
       <li><h3><a href='/vendor/@Model["vendor"].Id/order/@order.Id'>@order.Description order from @order.Date</h3></li>          
     }
     </ol>
-    <h4 id="addOrderLink"><a href='/vendor/@Model["vendor"].Id/order/new'>Add New Order</a></p>
+    <h4 id="addOrderLink"><a href='/vendor/@Model["vendor"].Id/order/new'>Add New Order</a></h4>
   </div>
 
-  <h4 class="rightSideBtn"><a href='/'>Back Home</a></h4>
   <h4 id="addVendorLink"><a href='/vendor'>View Vendors</a></h4> 
+  <h4 id="rightSideBtn"><a href='/'>Back Home</a></h4> 
 </div>  
 
