@@ -40,7 +40,7 @@ form {
   margin-left: 45%;
 }
 
-#btn, #vendorName {
+#btn {
   
   border: 3px solid #1292ab;
   padding: 2px;
@@ -60,8 +60,8 @@ form {
   
 }
 
-.addVendor, .orderList, .newOrder {
-  margin-top: 3%;
+.infoBox {
+  
   margin-left: 5%;
   padding: 3%;
   color: rgb(8, 76, 93);
@@ -71,7 +71,7 @@ form {
   font-size: 25px;
 }
 
-#viewVendorLink, #homePageLink {
+.rightSideBtn {
   float: right;
   margin-right: 5%;
   border: 5px solid #1292ab;

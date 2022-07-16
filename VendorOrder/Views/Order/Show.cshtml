@@ -6,24 +6,15 @@
   <h1 class="title"><strong>S U N N Y * B A K E R Y</strong></h1>
 
   <h2><strong>Order Details</strong></h2>
-
-  <div class="newOrder">
+  <div class="infoBox">
     <h3><strong>Vendor: </strong>@Model["vendor"].Name</h3>
-
     <h3><strong>Date: </strong>@Model["order"].Date</h3>
-
     <h3><strong>Order: </strong>@Model["order"].Description</h3>
-
-    <h3><strong>Price: </strong>$ @Model["order"].Price</h3>
-
-    
+    <h3><strong>Price: </strong>$ @Model["order"].Price</h3> 
+    <h4 id="addOrderLink"><a href='/vendor/@Model["vendor"].Id/order/new'>Add New Order</a></h4>
   </div>
 
-  
-
-  <h4 id="homePageLink"><a href='/vendor/@Model["vendor"].Id/order/new'>Add New Order</a></p></h4> 
-
-  <h4 id="addVendorLink"><a href='/vendor'>View Vendors</a></h4> 
-  
+  <h4 id="addVendorLink"><a href='/vendor'>View Vendors</a></h4>
+  <h4 class="rightSideBtn"><a href='/'>Back Home</a></h4> 
 </div>
 
