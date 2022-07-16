@@ -2,7 +2,7 @@ body {
   background-color: rgb(136, 237, 240);
 }
 
-.page, #page {
+.title {
   margin-top: 3%;
 }
 
@@ -79,7 +79,7 @@ form {
   margin-top: 2%;
   text-align: center;
   width:40%;
-  background-color: rgb(162, 232, 234);  
+  background-color: rgb(236, 224, 146);  
 }
 
 #addVendorLink {
@@ -90,7 +90,7 @@ form {
   margin-top: 2%;
   width:40%;
   text-align: center;
-  background-color: rgb(162, 232, 234);  
+  background-color: rgb(236, 224, 146);   
 }
 
 #addOrderLink {

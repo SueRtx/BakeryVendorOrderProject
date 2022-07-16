@@ -2,33 +2,23 @@
   Layout = "_Layout";
 }
 
-  <body>
-  @using VendorOrder.Models;
-    <div class="container"></div>
-      <div class="page">
-        <h1><strong>S U N N Y * B A K E R Y</strong></h1>
-        <h2><strong>Orders</strong><br>
-        Vendor: @Model["vendor"].Name</h2>
-        <div class="orderList">
-          <ol>
-          @* <h3>Vendor: @Model["vendor"].Name</h3> *@
-          @foreach (Order order in @Model["order"])
-          {             
-              
-            @* <a href='/vendor/@Model["vendor"].Id/orders/@order.Id'></a>
-            <a href='/vendor/@Model["vendor"].Id/orders/@order.Id'></a>
-            <a href='/vendor/@Model["vendor"].Id/orders/@order.Id'></a> *@
-            <li>
-            <h3>Description: @order.Description * Price: $ @order.Price * Date: @order.Date</h3> </li>          
-          }
-          </ol>
+<div class="container">
+  @using VendorOrder.Models;   
+  <h1 class="title"><strong>S U N N Y * B A K E R Y</strong></h1>
+  <h2><strong>Orders</strong><br>
+  Vendor: @Model["vendor"].Name</h2>
 
-          <h4 id="addOrderLink"><a href='/vendor/@Model["vendor"].Id/order/new'>Add New Order</a></p>
-        </div>
+  <div class="orderList">
+    <ol>
+    @foreach (Order order in @Model["order"])
+    {             
+      <li><h3><a href='/vendor/@Model["vendor"].Id/order/@order.Id'>@order.Description * Price: $ @order.Price * Date: @order.Date</h3></li>          
+    }
+    </ol>
+    <h4 id="addOrderLink"><a href='/vendor/@Model["vendor"].Id/order/new'>Add New Order</a></p>
+  </div>
 
-        <h4 id="homePageLink"><a href='/'>Back Home</a></h4>
-        <h4 id="addVendorLink"><a href='/vendor'>Vendors List</a></h4> 
+  <h4 id="homePageLink"><a href='/'>Back Home</a></h4>
+  <h4 id="addVendorLink"><a href='/vendor'>View Vendors</a></h4> 
+</div>  
 
-      </div>
-    </div>  
-  </body>

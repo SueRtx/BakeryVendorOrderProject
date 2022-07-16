@@ -1,24 +1,21 @@
 @{
   Layout = "_Layout";
 }
-  <body>
-    <div class="container">
-      <div class="page">
-        <h1><strong>S U N N Y * B A K E R Y</strong></h1>
-        <h2><strong>Vendor</strong></h2>
 
-        <div class="addVendor">
-          <form action="/vendor" method="post">
-            <label for="vendorName">Enter Vendor name: </label>
-            <input id="vendorName" name="vendorName" type="text">
-            <button type="submit" id="btn">Add </button>
-          </form>
-        </div>
+<div class="container">
+  <h1 class="title"><strong>S U N N Y * B A K E R Y</strong></h1>
+  <h2><strong>Vendor</strong></h2>
 
-        <h4 id="addVendorLink"><a href='/vendor/new'>Add Vendor</a></h4>
-        <h4 id="homePageLink"><a href='/'>Back Home</a></h4>
-        
+  <div class="addVendor">
+    <form action="/vendor" method="post">
+      <label for="vendorName">Enter Vendor name: </label>
+      <input id="vendorName" name="vendorName" type="text">
+      <button type="submit" id="btn">Add </button>
+    </form>
+  </div>
 
-      </div>
-    </div>
-  </body>
+  <h4 id="addVendorLink"><a href='/vendor'>Vendor List</a></h4>
+  <h4 id="homePageLink"><a href='/'>Back Home</a></h4>
+    
+</div>
+
