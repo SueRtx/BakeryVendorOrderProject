@@ -1,4 +1,4 @@
-# Sunny Bakery Vendor & Order Tracker(C# Project #)
+# Vendor & Order Tracker(C# Project #2)
 
 #### By Sue Roberts
 
