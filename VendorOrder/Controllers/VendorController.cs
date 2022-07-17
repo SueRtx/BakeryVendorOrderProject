@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using System;
 using VendorOrder.Models;
 using System.Collections.Generic;
 
@@ -21,9 +22,9 @@ namespace VendorOrder.Controllers
     }
 
     [HttpPost("/vendor")]
-    public ActionResult Create(string vendorName)
+    public ActionResult Create(string vendorName, string vendorDescription)
     {
-      Vendor newVendor = new Vendor(vendorName);
+      Vendor newVendor = new Vendor(vendorName, vendorDescription);
       return RedirectToAction("Index");
     }
 
