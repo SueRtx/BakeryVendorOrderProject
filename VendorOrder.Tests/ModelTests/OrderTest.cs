@@ -74,9 +74,7 @@ namespace VendorOrder.Tests
       Order newOrder1 = new Order(description1, price1, date1);
       Order newOrder2 = new Order(description2, price2, date2);
       List<Order> newList = new List<Order> { newOrder1, newOrder2 };
-
       List<Order> result = Order.GetAll();
-
       CollectionAssert.AreEqual(newList, result);
     }
   }
