@@ -7,7 +7,9 @@
   <h1 class="title"><strong>S U N N Y * B A K E R Y</strong></h1>
   
   <h2><strong>Orders</strong></h2>
-  <h5><strong>Vendor: @Model["vendor"].Name </strong> * Click on order to see details *</h5>
+  <h5><strong>Vendor:@Model["vendor"].Name * Description: @Model["vendor"].Description</strong> 
+  </h5>
+  <h4>* Click on order to see details *</h4>
   <div class="infoBox">
     @if (@Model["order"].Count == 0)
     {

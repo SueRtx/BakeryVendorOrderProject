@@ -41,34 +41,51 @@ form {
 }
 
 #btn {
-  
+  float: right;
   border: 3px solid #1292ab;
   padding: 2px;
   font-weight: bold;
   font-size: 25px;
   color: rgb(8, 76, 93);
+  margin-top: -7%;
   background-color: rgb(216, 236, 150);  
 }
 
-#vendorName {
-  background-color: rgb(162, 232, 234);  
-  border: 3px solid #1292ab;
-  padding: 2px;
-  font-weight: bold;
-  font-size: 25px;
-  color: rgb(8, 76, 93);
-  
-}
-
 .infoBox {
-  
   margin-left: 5%;
-  padding: 3%;
+  padding: 2%;
+  padding-left: 7%;
   color: rgb(8, 76, 93);
   border: 5px solid #1292ab; 
   width:90%;
   background-color: rgb(162, 232, 234); 
   font-size: 25px;
+}
+
+#vendorName {
+  float: right;
+  margin-right: 12%;
+  background-color: rgb(153, 239, 242);  
+  border: 3px solid #1292ab;
+  padding: 2px;
+  font-weight: bold;
+  width:45%;
+  font-size: 25px;
+  color: rgb(8, 76, 93);
+  
+}
+
+#vendorDisc {
+  float: right;
+  margin-right: 12%;
+  background-color: rgb(153, 239, 242);  
+  border: 3px solid #1292ab;
+  padding: 2px;
+  width:45%;
+  font-weight: bold;
+  font-size: 25px;
+  color: rgb(8, 76, 93);
+  
 }
 
 #rightSideBtn {
@@ -100,7 +117,7 @@ form {
   background-color: rgb(216, 236, 150);  
 }
 
-#orderPrice, #orderDescription, #orderDate {
+#orderPrice, #orderDescription,  #orderDate {
   background-color: rgb(162, 232, 234);
   float: right;
   margin-right: 20%;
@@ -108,7 +125,7 @@ form {
   padding: 2px;
   font-weight: bold;
   font-size: 25px;
-  width:30%;
+  width:40%;
   color: rgb(8, 76, 93); 
 }
 

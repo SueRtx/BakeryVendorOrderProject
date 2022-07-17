@@ -10,16 +10,16 @@
     <form action="/vendor/@Model.Id/order" method="post">
       <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
 
-      <label for="orderDate">Enter Order Date: </label>
+      <label for="orderDate">Order Date: </label>
       <input id="orderDate" name="orderDate" type="date" required><br>
 
-      <label for="orderDescription">Enter Order Description:</label>
+      <label for="orderDescription">Order Item:</label>
       <select class="form-control" id="orderDescription" name="orderDescription">
         <option value="Bread"checked>Bread</option>
-        <option value="Pastry">Pastry</option> 
+        <option value="Pastries">Pastries</option> 
       </select>  
 
-      <label for="orderPrice">Enter Order Price: </label>
+      <label for="orderPrice">Order Price: </label>
       <input id="orderPrice" name="orderPrice" type="number" min="1" step="1"  onkeyup="if(this.value<0){this.value= this.value * -1}"required><br>
 
       <button type="submit" id='btn2'>Submit</button>

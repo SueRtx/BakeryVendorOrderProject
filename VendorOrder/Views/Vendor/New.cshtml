@@ -8,10 +8,15 @@
   <h2><strong>Add Vendor</strong></h2>
   <div class="infoBox">
     <form action="/vendor" method="post">
-      <label for="vendorName">Enter Vendor name: </label>
+      <label for="vendorName">Vendor Name: </label>
       <input id="vendorName" name="vendorName" type="text" required>
-      <label for="vendorDescription">Vendor Description</label>
-      <input id="vendorDescription" name="vendorDescription" type="text" required>
+      <label for="vendorDescription">Vendor Description:</label>
+        <select class="form-control" id="vendorDisc" name="vendorDescription">
+        <option value="Store"checked>Store </option>
+        <option value="Restaurant">Restaurant</option>
+        <option value="Customer">Customer</option> 
+      </select>  
+    
       <button type="submit" id="btn">Add </button>
     </form>
   </div>
