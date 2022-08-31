@@ -18,6 +18,9 @@
 ## Description
 When the user runs this application, they can create a new vendor and add new orders. The vendors page  includes vendor name, a description of the vendor, a list of orders belonging to the vendor and a link to a page presenting a form to fill out to create a new Vendor. Users can click a Vendor's name and go to a new page that will display all of their  orders or add new orders.
 
+## Home View
+![Home Index](VendorOrder/wwwroot/image/Bakery.png "Home Index image")
+
 ## Setup/Installation Requirements
 
 * Open terminal.
